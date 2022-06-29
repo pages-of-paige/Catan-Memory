@@ -24,6 +24,7 @@ MVP
 | Easy level layout | H | 4 hrs | hrs |
 | Timer Tracker | H | 2 hrs | hrs |
 | Points Tracker | H | 4 hrs | hrs |
+| Shuffle | H | 4 hrs | 5hrs |
 | TOTAL TIME | | 19 hrs | hrs |
 
 Post-MVP
