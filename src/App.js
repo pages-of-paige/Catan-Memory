@@ -22,29 +22,15 @@ function App() {
   const [firstClick, setFirstClick] = useState(null);
   const [secondClick, setSecondClick] = useState(null);
 
+  // SHUFFLE
   const shuffle = () => {
     const shuffled = [...cardFronts]
       .sort(() => Math.random() - 0.5)
-      .map((each) => ({ ...each, id: Math.random() }));
+      .map((eachCard) => ({ ...eachCard, id: Math.random() }));
 
     setCards(shuffled);
     setPoints(0);
   };
-  // // Fisher-Yates Shuffle
-  // const shuffle = (cardFronts) => {
-  //   const shuffledCards = (cardFronts) => {
-  //     let index = cardFronts.length, temp, random
-  //     while (index !== 0) {
-  //       random = Math.floor(Math.random() * index)
-  //       index -= 1
-  //       temp = cardFronts[index]
-  //       cardFronts[index] = cardFronts[random]
-  //       cardFronts[random] = temp
-  //     }
-  //   }
-  //   setCards(shuffledCards())
-  //   setPoints(0)
-  // }
 
   const handleCard = (card) => {
     if (firstClick === true) {
@@ -55,6 +41,7 @@ function App() {
     }
   }
 
+
   return (
     <div className="App">
       <h1>Memory: A Catan Twist</h1>
@@ -62,7 +49,7 @@ function App() {
       <button onClick={shuffle}>Shuffle</button>
       <section className="cardLayout">
         {cards.map((card) => (
-          <Card key={card.id} card={card} handleCard={handleCard} flip={card === firstClick} />
+          <Card key={card.id} card={card} handleCard={handleCard} isFlipped={card === firstClick} />
         ))}
       </section>
     </div>
