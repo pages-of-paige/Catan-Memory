@@ -5,16 +5,16 @@ import Card from "./components/Card";
 function App() {
   // Array of each card's front face image
   const cardFronts = [
-    { src: "/images/brick.jpeg" },
-    { src: "/images/brick.jpeg" },
-    { src: "/images/oar.jpeg" },
-    { src: "/images/oar.jpeg" },
-    { src: "/images/sheep.jpeg" },
-    { src: "/images/sheep.jpeg" },
-    { src: "/images/wheat.jpeg" },
-    { src: "/images/wheat.jpeg" },
-    { src: "/images/wood.jpeg" },
-    { src: "/images/wood.jpeg" },
+    { src: "/images/brick.jpeg", match: false },
+    { src: "/images/brick.jpeg", match: false },
+    { src: "/images/oar.jpeg", match: false },
+    { src: "/images/oar.jpeg", match: false },
+    { src: "/images/sheep.jpeg", match: false },
+    { src: "/images/sheep.jpeg", match: false },
+    { src: "/images/wheat.jpeg", match: false },
+    { src: "/images/wheat.jpeg", match: false },
+    { src: "/images/wood.jpeg", match: false },
+    { src: "/images/wood.jpeg", match: false },
   ];
 
   const [cards, setCards] = useState([]);
@@ -38,9 +38,36 @@ function App() {
     } 
     else {
       setSecondClick(card)
+      // compareCards()
     }
   }
 
+  // COMPARE CARDS
+  const compareCards = () => {
+    // if both clicked cards have the same src, change matched prop to be true and add 10 points
+    if (firstClick && secondClick) {
+      if (firstClick.src === secondClick.src) {
+        setCards(prevArray => {
+          return prevArray.map(card => {
+            if (card.src === secondClick.src) {
+              return {...card, match: true}
+            }
+            else {
+              return card
+            }
+          })
+        })
+        setFirstClick(null)
+        setSecondClick(null)
+        setPoints(currentPoints => currentPoints + 10)
+      }
+      else {
+        setFirstClick(null)
+        setSecondClick(null)
+        setPoints(currentPoints => currentPoints - 10)
+      }
+    }
+  }
 
   return (
     <div className="App">
