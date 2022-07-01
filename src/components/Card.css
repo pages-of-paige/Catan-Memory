@@ -1,9 +1,3 @@
-.container {
-    width: 200px;
-    height: 300px;
-    perspective: 1000px;
-}
-
 .card {
     width: 100%;
     height: 100%;
@@ -13,22 +7,11 @@
     transition: 1s;
 }
 
-.front, .back {
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    backface-visibility: hidden;
-}
-
 .front {
-    transform: rotateY(180deg);
+    position: absolute;
+    transform: rotateY(90deg);
 }
 
-
-/* .back {
-    transform: rotateY(180deg);
-} */
-
-.flipped {
-    transform: rotateY(180deg);
+.flipped .front {
+    transform: rotateY(0deg);
 }
