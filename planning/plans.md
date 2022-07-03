@@ -18,12 +18,12 @@ MVP
 
 | Component | Priority | Estimated Time | Actual Time |
 |:---|:---:|:---:|:---:|
-| Card flips when clicked | H | 2 hrs | 3.5hrs |
+| Card flips when clicked | H | 2 hrs | 5hrs |
 | High Score List pop-up window | H | 5 hrs | hrs |
 | User input for high score | H | 2 hrs | hrs |
 | Easy level layout | H | 4 hrs | 4hrs |
-| Timer Tracker | H | 2 hrs | hrs |
-| Points Tracker | H | 4 hrs | hrs |
+| Timer Tracker | H | 2 hrs | 2hrs |
+| Points Tracker | H | 4 hrs | 3hrs |
 | Shuffle | H | 4 hrs | 5hrs |
 | TOTAL TIME | | 19 hrs | hrs |
 
