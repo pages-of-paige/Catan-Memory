@@ -1,6 +1,7 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import "./App.css";
 import Card from "./components/Card";
+import Timer from "./components/Timer";
 
 function App() {
   // Array of each card's front face image
@@ -32,12 +33,11 @@ function App() {
       setFirstClick(card);
     } else {
       setSecondClick(card);
-      compareCards()
     }
   };
 
   // COMPARE CARDS
-  const compareCards = () => {
+  useEffect(() => {
     // if both clicked cards have the same src, change matched prop to be true and add 10 points
     if (firstClick && secondClick) {
       if (firstClick.src === secondClick.src) {
@@ -59,11 +59,12 @@ function App() {
         setPoints((currentPoints) => currentPoints - 10);
       }
     }
-  };
+}, [firstClick, secondClick]) 
 
   return (
     <div className="App">
       <h1>Memory: A Catan Twist</h1>
+      <Timer />
       <h2>Points: {points}</h2>
       <button onClick={shuffle}>Shuffle</button>
       <section className="cardLayout">
