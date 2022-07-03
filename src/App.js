@@ -28,35 +28,41 @@ function App() {
     setPoints(0);
   };
 
+  // HANDLE CARDS
   const handleCard = (card) => {
-    if (firstClick === true) {
-      setFirstClick(card);
-    } else {
+    if (firstClick) {
       setSecondClick(card);
+    } else {
+      setFirstClick(card);
     }
   };
+
+  // RESET TURN
+  const resetTurn = () => {
+    setFirstClick(null);
+    setSecondClick(null);
+  }
 
   // COMPARE CARDS
   useEffect(() => {
     // if both clicked cards have the same src, change matched prop to be true and add 10 points
     if (firstClick && secondClick) {
       if (firstClick.src === secondClick.src) {
+        // console.log('cards match')
         setCards((prevArray) => {
           return prevArray.map((card) => {
-            if (card.src === secondClick.src) {
+            if (card.src === firstClick.src) {
+              setPoints(points => points += 2.5);
               return { ...card, match: true };
             } else {
               return card;
             }
           });
         });
-        setFirstClick(null);
-        setSecondClick(null);
-        setPoints((currentPoints) => currentPoints + 10);
+        resetTurn()
       } else {
-        setFirstClick(null);
-        setSecondClick(null);
-        setPoints((currentPoints) => currentPoints - 10);
+        setTimeout(() =>
+        resetTurn(), 1000)
       }
     }
 }, [firstClick, secondClick]) 
@@ -74,7 +80,7 @@ function App() {
             card={card}
             handleCard={handleCard}
             isFlipped={
-              card === firstClick || card === secondClick || card.match
+              card === firstClick || card === secondClick || card.match === true
             }
           />
         ))}
