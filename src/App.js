@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import "./App.css";
 import Card from "./components/Card";
-import Timer from "./components/Timer";
+// import Timer from "./components/Timer";
 
 function App() {
   // Array of each card's front face image
@@ -17,6 +17,8 @@ function App() {
   const [points, setPoints] = useState(0);
   const [firstClick, setFirstClick] = useState(null);
   const [secondClick, setSecondClick] = useState(null);
+  const [time, setTime] = useState(30);
+  const [active, setActive] = useState(false)
 
   // SHUFFLE
   const shuffle = () => {
@@ -67,12 +69,29 @@ function App() {
     }
 }, [firstClick, secondClick]) 
 
+  // COUNTDOWN begins on click
+  useEffect(() => {
+    let timer = null
+    if (active) {
+      clearInterval(timer)
+      timer = time > 0 && setInterval(() => setTime(time - 1), 1000);
+    }
+    return () => clearInterval(timer);
+  }, [time, active]);
+
+  // HANDLE CLICK for shuffle and countdown functions to begin on button click
+  const handleClick = () => {
+    shuffle()
+    setActive(!active)
+  }
+
   return (
     <div className="App">
       <h1>Memory: A Catan Twist</h1>
-      <Timer />
+      <h2>Time Remaining:{" "}
+          {time > 0 ? time : <span>Game over! Better luck next time.</span>}</h2>
       <h2>Points: {points}</h2>
-      <button onClick={shuffle}>Shuffle</button>
+      <button onClick={handleClick}>Shuffle</button>
       <section className="cardLayout">
         {cards.map((card) => (
           <Card

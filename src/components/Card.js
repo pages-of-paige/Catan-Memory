@@ -5,10 +5,6 @@ const Card = ({card, handleCard, isFlipped}) => {
         handleCard(card)
     }
 
-    // const handleFlip = (event) => {
-    //     event.currentTarget.classList.toggle('flipped')
-    // }
-
         // if flipped status is true, show the front face of card, else show the back of card
     return (
         <div className='container'>
