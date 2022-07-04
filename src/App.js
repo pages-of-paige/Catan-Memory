@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import "./App.css";
 import Card from "./components/Card";
-// import Timer from "./components/Timer";
+import HighScore from "./components/HighScore";
 
 function App() {
   // Array of each card's front face image
@@ -104,6 +104,9 @@ function App() {
           />
         ))}
       </section>
+      <HighScore trigger={true}>
+        
+      </HighScore>
     </div>
   );
 }
