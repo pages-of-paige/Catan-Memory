@@ -15,3 +15,7 @@
 .flipped .front {
     transform: rotateY(0deg);
 }
+
+.container {
+    justify-content: center;
+}
