@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Catan-Memory/static/css/main.8596bee0.css",
+    "main.js": "/Catan-Memory/static/js/main.4071494a.js",
+    "index.html": "/Catan-Memory/index.html",
+    "main.8596bee0.css.map": "/Catan-Memory/static/css/main.8596bee0.css.map",
+    "main.4071494a.js.map": "/Catan-Memory/static/js/main.4071494a.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8596bee0.css",
+    "static/js/main.4071494a.js"
+  ]
+}
