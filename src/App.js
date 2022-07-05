@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 import "./App.css";
 import Card from "./components/Card";
-import HighScore from "./components/HighScore";
 
 function App() {
   // Array of each card's front face image
@@ -50,7 +49,6 @@ function App() {
     // if both clicked cards have the same src, change matched prop to be true and add 10 points
     if (firstClick && secondClick) {
       if (firstClick.src === secondClick.src) {
-        // console.log('cards match')
         setCards((prevArray) => {
           return prevArray.map((card) => {
             if (card.src === firstClick.src) {
@@ -91,14 +89,24 @@ function App() {
       <video autoPlay loop muted className="video">
         <source src="/av/C0089.mp4" type="video/mp4" />
       </video>
-
+      
       <div className="content">
-        <audio src="/av/mixkit-forest-near-countryside-farm-1221.wav"></audio>
+        <div id="audio">
+          <audio controls autoplay loop>
+            <source src="/av/mixkit-forest-near-countryside-farm-1221.wav" type="audio/wav" />
+            Your browser does not support our audio element.
+          </audio>
+        </div>
+
         <h1>Memory: A Catan Twist</h1>
+
         <h2>Time Remaining:{" "}
             {time > 0 ? time : <span>Game over! Better luck next time.</span>}</h2>
+        <br />
         <h2>Points: {points}</h2>
+
         <button onClick={handleClick}>Shuffle</button>
+
         <section className="cardLayout">
           {cards.map((card) => (
             <Card
@@ -111,7 +119,6 @@ function App() {
             />
           ))}
         </section>
-        <HighScore trigger={true} />
       </div>
 
     </div>
