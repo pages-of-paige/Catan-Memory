@@ -19,23 +19,28 @@ MVP
 | Component | Priority | Estimated Time | Actual Time |
 |:---|:---:|:---:|:---:|
 | Card flips when clicked | H | 2 hrs | 5hrs |
-| High Score List pop-up window | H | 5 hrs | hrs |
-| User input for high score | H | 2 hrs | hrs |
 | Easy level layout | H | 4 hrs | 4hrs |
-| Timer Tracker | H | 2 hrs | 2hrs |
+| Timer Tracker | H | 2 hrs | 3hrs |
 | Points Tracker | H | 4 hrs | 3hrs |
 | Shuffle | H | 4 hrs | 5hrs |
-| TOTAL TIME | | 19 hrs | hrs |
+| TOTAL TIME | | 19 hrs | 20hrs |
 
 Post-MVP
 
 | Component | Priority | Estimated Time | Actual Time |
 |:---|:---:|:---:|:---:|
-| Looped moving background | M | 2 hrs | hrs |
-| Music in backround | L | 2 hrs | hrs |
+| Looped moving background | M | 2 hrs | 2hr |
+| Music in backround | L | 2 hrs | 1hr |
 | Hard level layout | M | 3 hrs | hrs |
-| Style of cards | M | 2 hrs | hrs |
+| Style of cards | M | 2 hrs | 2hrs |
 | Animation | M | 4 hrs | hrs |
 | Responsive Design | M | 5 hrs | hrs |
+| High Score List pop-up window | H | 5 hrs | 4hrs (scrapped) |
+| User input for high score | H | 2 hrs | (scrapped) |
 
 | TOTAL TIME | | 17 hrs | hrs |
+
+## Sources
+[The Net Ninja](https://youtu.be/nmYXnaG0RrE) was incredibly helpful with breaking down the logic behind shuffling and comparing cards.
+
+Additional Footage Provided By <a target="_blank" href="http://www.videezy.com/">Videezy</a>
