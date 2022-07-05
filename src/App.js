@@ -1,15 +1,23 @@
 import { useEffect, useState } from "react";
 import "./App.css";
 import Card from "./components/Card";
+import  backgroundAudio from "./av/mixkit-forest-near-countryside-farm-1221.wav";
+import backgroundVideo from "./av/C0089.mp4";
+import brick from "./images/brick.jpeg";
+import oar from "./images/oar.jpeg";
+import sheep from "./images/sheep.jpeg";
+import wheat from "./images/wheat.jpeg";
+import wood from "./images/wood.jpeg";
+
 
 function App() {
   // Array of each card's front face image
   const cardFronts = [
-    { src: "/images/brick.jpeg", match: false },
-    { src: "/images/oar.jpeg", match: false },
-    { src: "/images/sheep.jpeg", match: false },
-    { src: "/images/wheat.jpeg", match: false },
-    { src: "/images/wood.jpeg", match: false },
+    { src: {brick}, match: false },
+    { src: {oar}, match: false },
+    { src: {sheep}, match: false },
+    { src: {wheat}, match: false },
+    { src: {wood}, match: false },
   ];
 
   const [cards, setCards] = useState([]);
@@ -87,13 +95,13 @@ function App() {
     <div className="App">
 
       <video autoPlay loop muted className="video">
-        <source src="/av/C0089.mp4" type="video/mp4" />
+        <source src={backgroundVideo} type="video/mp4" />
       </video>
       
       <div className="content">
         <div id="audio">
-          <audio controls autoplay loop>
-            <source src="/av/mixkit-forest-near-countryside-farm-1221.wav" type="audio/wav" />
+          <audio controls autoPlay loop>
+            <source src={backgroundAudio} type="audio/wav" />
             Your browser does not support our audio element.
           </audio>
         </div>

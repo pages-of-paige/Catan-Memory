@@ -1,6 +1,8 @@
 import './Card.css'
+import backOfCard from '../images/back.jpeg'
 
 const Card = ({card, handleCard, isFlipped}) => {
+    console.log(card.src)
     const handleClick = () => {
         handleCard(card)
     }
@@ -11,7 +13,7 @@ const Card = ({card, handleCard, isFlipped}) => {
             <div className='card'>
                 <div className={isFlipped ? 'flipped' : ''} >
                     <img className='front' src={card.src} alt='front of card' />
-                    <img className='back' src='./images/back.jpeg' alt='back of card' onClick={handleClick} />
+                    <img className='back' src={backOfCard} alt='back of card' onClick={handleClick} />
                 </div>
             </div>
         </div>
