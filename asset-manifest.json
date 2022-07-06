@@ -1,13 +1,21 @@
 {
   "files": {
-    "main.css": "/Catan-Memory/static/css/main.8596bee0.css",
-    "main.js": "/Catan-Memory/static/js/main.59fc906b.js",
+    "main.css": "/Catan-Memory/static/css/main.ba6c4e7f.css",
+    "main.js": "/Catan-Memory/static/js/main.4e56cabb.js",
+    "static/media/C0089.mp4": "/Catan-Memory/static/media/C0089.efca5d41d9d020816a0e.mp4",
+    "static/media/mixkit-forest-near-countryside-farm-1221.wav": "/Catan-Memory/static/media/mixkit-forest-near-countryside-farm-1221.81724a502989aa8a2e60.wav",
+    "static/media/wheat.jpeg": "/Catan-Memory/static/media/wheat.a09288ae91fd41f0de2b.jpeg",
+    "static/media/wood.jpeg": "/Catan-Memory/static/media/wood.78362b9c813085f48111.jpeg",
+    "static/media/back.jpeg": "/Catan-Memory/static/media/back.cb36626d18224ce40c47.jpeg",
+    "static/media/oar.jpeg": "/Catan-Memory/static/media/oar.cfdd03ac95b089259090.jpeg",
+    "static/media/brick.jpeg": "/Catan-Memory/static/media/brick.321b0293570cf29b2d3a.jpeg",
+    "static/media/sheep.jpeg": "/Catan-Memory/static/media/sheep.1beb0668824e8e613f67.jpeg",
     "index.html": "/Catan-Memory/index.html",
-    "main.8596bee0.css.map": "/Catan-Memory/static/css/main.8596bee0.css.map",
-    "main.59fc906b.js.map": "/Catan-Memory/static/js/main.59fc906b.js.map"
+    "main.ba6c4e7f.css.map": "/Catan-Memory/static/css/main.ba6c4e7f.css.map",
+    "main.4e56cabb.js.map": "/Catan-Memory/static/js/main.4e56cabb.js.map"
   },
   "entrypoints": [
-    "static/css/main.8596bee0.css",
-    "static/js/main.59fc906b.js"
+    "static/css/main.ba6c4e7f.css",
+    "static/js/main.4e56cabb.js"
   ]
 }
