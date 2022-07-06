@@ -2,7 +2,6 @@ import './Card.css'
 import backOfCard from '../images/back.jpeg'
 
 const Card = ({card, handleCard, isFlipped}) => {
-    console.log(card.src)
     const handleClick = () => {
         handleCard(card)
     }

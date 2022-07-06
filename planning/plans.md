@@ -23,7 +23,8 @@ MVP
 | Timer Tracker | H | 2 hrs | 3hrs |
 | Points Tracker | H | 4 hrs | 3hrs |
 | Shuffle | H | 4 hrs | 5hrs |
-| TOTAL TIME | | 19 hrs | 20hrs |
+| Deployment | H | 1 hrs | 4hrs |
+| TOTAL TIME | | 19 hrs | 24hrs |
 
 Post-MVP
 
@@ -31,14 +32,14 @@ Post-MVP
 |:---|:---:|:---:|:---:|
 | Looped moving background | M | 2 hrs | 2hr |
 | Music in backround | L | 2 hrs | 1hr |
-| Hard level layout | M | 3 hrs | hrs |
+| Hard level layout | M | 3 hrs | (scrapped) |
 | Style of cards | M | 2 hrs | 2hrs |
-| Animation | M | 4 hrs | hrs |
+| Animation | M | 4 hrs | 2hrs |
 | Responsive Design | M | 5 hrs | hrs |
 | High Score List pop-up window | H | 5 hrs | 4hrs (scrapped) |
 | User input for high score | H | 2 hrs | (scrapped) |
 
-| TOTAL TIME | | 17 hrs | hrs |
+| TOTAL TIME | | 17 hrs | 11hrs |
 
 ## Sources
 [The Net Ninja](https://youtu.be/nmYXnaG0RrE) was incredibly helpful with breaking down the logic behind shuffling and comparing cards.

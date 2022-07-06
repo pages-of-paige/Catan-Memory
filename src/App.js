@@ -87,8 +87,11 @@ function App() {
 
   // HANDLE CLICK for shuffle and countdown functions to begin on button click
   const handleClick = () => {
+    // reshuffle cards
     shuffle()
-    setActive(!active)
+    // starts timer from where it left off
+    setActive(true)
+    setTime(30)
   }
 
   return (
@@ -108,12 +111,13 @@ function App() {
 
         <h1>Memory: A Catan Twist</h1>
 
-        <h2>Time Remaining:{" "}
-            {time > 0 ? time : <span>Game over! Better luck next time.</span>}</h2>
-        <br />
-        <h2>Points: {points}</h2>
+        <div className="timePoints">
+          <h2>Time Remaining:{" "}
+              {time > 0 ? time : <span>Game over! Better luck next time.</span>}</h2>
+          <h2>Points: {points}</h2>
+        </div>
 
-        <button onClick={handleClick}>Shuffle</button>
+        <button onClick={handleClick}>New Game</button>
 
         <section className="cardLayout">
           {cards.map((card) => (
