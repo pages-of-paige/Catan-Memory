@@ -96,11 +96,11 @@ function App() {
 
   return (
     <div className="App">
-
-      <video autoPlay loop muted className="video">
-        <source src={backgroundVideo} type="video/mp4" />
-      </video>
-      
+      <div className="videoContainer">
+        <video autoPlay loop muted className="video">
+          <source src={backgroundVideo} type="video/mp4" />
+        </video>
+      </div>
       <div className="content">
         <div id="audio">
           <audio controls autoPlay loop>
@@ -119,7 +119,7 @@ function App() {
 
         <button onClick={handleClick}>New Game</button>
 
-        <section className="cardLayout">
+        <section id="cardLayout">
           {cards.map((card) => (
             <Card
               key={card.id}

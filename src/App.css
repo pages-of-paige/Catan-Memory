@@ -11,11 +11,11 @@
   overflow: inherit;
 }
 
-.content .cardLayout {
-  display: flex;
-  flex-wrap: wrap;
+.content #cardLayout {
+  display: grid;
+  width: 90%;
+  grid-template-columns: 1fr 1fr 1fr;  
   z-index: 1;
-  justify-content: center;
 }
 
 .content {
@@ -27,8 +27,9 @@
   position: fixed;
   left: 0;
   bottom: 0;
-  min-width: 100%;
-  min-height: 100%;
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
 }
 
 #audio {
@@ -40,4 +41,24 @@
 .timePoints {
   display: flex;
   justify-content: space-evenly;
+}
+
+button {
+  font-size: 20px;
+  background-color:rgba(55, 33, 1, 0.759);
+  border-radius: 10px;
+  color: hwb(40 62% 11%);
+  padding: 15px;
+  width: 150px;
+  cursor: pointer;
+}
+
+h1 {
+  padding-top: 5%;
+  margin-bottom: 30px;
+  font-size: 70px;
+}
+
+h2 {
+  margin-top: 0%;
 }

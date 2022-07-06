@@ -8,14 +8,14 @@ const Card = ({card, handleCard, isFlipped}) => {
 
         // if flipped status is true, show the front face of card, else show the back of card
     return (
-        <div className='container'>
+        // <div className='container'>
             <div className='card'>
                 <div className={isFlipped ? 'flipped' : ''} >
                     <img className='front' src={card.src} alt='front of card' />
                     <img className='back' src={backOfCard} alt='back of card' onClick={handleClick} />
                 </div>
             </div>
-        </div>
+        // </div>
     )
 }
 

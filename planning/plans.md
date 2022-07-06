@@ -35,11 +35,11 @@ Post-MVP
 | Hard level layout | M | 3 hrs | (scrapped) |
 | Style of cards | M | 2 hrs | 2hrs |
 | Animation | M | 4 hrs | 2hrs |
-| Responsive Design | M | 5 hrs | hrs |
+| Responsive Design | M | 5 hrs | 5hrs |
 | High Score List pop-up window | H | 5 hrs | 4hrs (scrapped) |
 | User input for high score | H | 2 hrs | (scrapped) |
 
-| TOTAL TIME | | 17 hrs | 11hrs |
+| TOTAL TIME | | 17 hrs | 16hrs |
 
 ## Sources
 [The Net Ninja](https://youtu.be/nmYXnaG0RrE) was incredibly helpful with breaking down the logic behind shuffling and comparing cards.
