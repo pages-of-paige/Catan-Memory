@@ -85,6 +85,16 @@ function App() {
     return () => clearInterval(timer);
   }, [time, active]);
 
+  // const TimeRemaining = () => {
+  //   if (time > 0) {
+  //     return time
+  //   } else if (time > 0 && cards.match === true){
+  //   return "You're so smart"
+  // } else {
+  //   return "Game over! Better luck next time."
+  // }
+  // }
+
   // HANDLE CLICK for shuffle and countdown functions to begin on button click
   const handleClick = () => {
     // reshuffle cards
@@ -113,7 +123,9 @@ function App() {
 
         <div className="timePoints">
           <h2>Time Remaining:{" "}
-              {time > 0 ? time : <span>Game over! Better luck next time.</span>}</h2>
+              {time > 0 ? time : <span>Game over! Better luck next time.</span>}
+              {/* {TimeRemaining} */}
+              </h2>
           <h2>Points: {points}</h2>
         </div>
 
