@@ -13,11 +13,11 @@ import wood from "./images/wood.jpeg";
 function App() {
   // Array of each card's front face image
   const cardFronts = [
-    { src: {brick}, match: false },
-    { src: {oar}, match: false },
-    { src: {sheep}, match: false },
-    { src: {wheat}, match: false },
-    { src: {wood}, match: false },
+    { src: brick, match: false },
+    { src: oar, match: false },
+    { src: sheep, match: false },
+    { src: wheat, match: false },
+    { src: wood, match: false },
   ];
 
   const [cards, setCards] = useState([]);
